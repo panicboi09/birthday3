@@ -7,17 +7,16 @@
     <link src="birthday.css" rel="stylesheet"/>
 </head>
 <body>
-    <h1>🎂 Happy Birthday!! ANKIT 🎉</h1>
-  <p>Wishing you all the joy, success, and happiness in the world!</p>
-  <img src="WhatsApp Image 2025-06-11 at 6.33.33 PM.jpeg" alt="Friend Photo">
-
+  <div class="container">
+    <h1>Happy Birthday 🎉</h1>
+    <img src="WhatsApp Image 2025-06-11 at 6.33.33 PM.jpeg" alt="Birthday Cake" />
+    <button onclick="handleClick()">Click Me for a Surprise!</button>
+    <div class="popup" id="wishMessage">
+      🎂 Wishing you a day filled with love, laughter, and cake! 🎈
+    </div>
+    <audio id="bdayAudio" src="happy-birthday-357371.mp3"></audio>
+  </div>
   
-  <canvas class="confetti"></canvas>
-
-  
-  <audio autoplay loop>
-    <source src="happy-birthday-357371.mp3" type="audio/mpeg">
-  </audio>
 
     <script src="bday.js"></script>
 </body>
