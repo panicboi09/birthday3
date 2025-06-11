@@ -1,43 +1,64 @@
-body {
+
+     body {
       margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #fff;
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
       overflow: hidden;
+    }
+
+    .container {
       text-align: center;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      max-width: 450px;
     }
 
     h1 {
-      font-size: 4rem;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      font-size: 1.5rem;
-      margin: 1rem;
+      color: #e75480;
+      font-size: 2.5em;
+      margin-bottom: 20px;
     }
 
     img {
-      width: 200px;
+      display: flex;
+      align-items: center;
       height: 200px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      margin-top: 20px;
-      object-fit: cover;
+      width: 200px;
+      border-radius: 15px;
+      margin-bottom: 20px;
     }
 
-    .confetti {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      z-index: -1;
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #e75480;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d03f6d;
+      transform: scale(1.05);
+    }
+
+    .popup {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #333;
+      display: none;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
